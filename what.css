@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    position: relative;
+    overflow: hidden;
+}
+
+#page {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://toyfight.co/wp-content/themes/toybox/img/bg/horizon-what.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+#page > img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+#page h1 {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF55A;
+    font-size: 350px;
+}
+
+#nav {
+    height: 14%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0px 80px;
+    z-index: 10;
+}
+
+#nav>a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#nav a:hover {
+    color: #FFF55A;
+    cursor: grab;
+}
+
+#nav a:active {
+    cursor: grabbing;
+}
+
+#center-nav>a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#center-nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+#nav > img {
+    width: 3%;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #F86449;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    gap: 40px;
+}
+
+#page1>h6 {
+    position: relative;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+#page1>h6::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 24px;
+    height: 7px;
+    background-color: #FFF55A;
+    transform: skewY(-16deg);
+    margin: 0px -12px;
+}
+
+#page1>h5 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-align: center;
+    width: 25%;
+}
+
+#page1>h1 {
+    color: #fff;
+    font-weight: 800;
+    text-align: center;
+    text-align: center;
+    font-size: 42px;
+    width: 50%;
+}
+
+#page2 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #F97057;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2 #services {
+    display: flex;
+    gap: 250px;
+    text-align: center;
+    color: #fff;
+}
+
+#services h1 {
+    font-size: 38px;
+}
+
+#services p {
+    font-weight: 600;
+}
+
+#services #discover {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#services #design {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#services #deploy {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#page2>h4 {
+    position: absolute;
+    top: 30%;
+    left: 50.7%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#page2>h4::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 24px;
+    height: 7px;
+    background-color: #FFF55A;
+    transform: skewY(-16deg);
+    margin: 0px -12px;
+}
+
+#page3 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #E7EEED;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 40px;
+}
+
+#page3>h4 {
+    position: absolute;
+    top: 20%;
+    left: 50.7%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 10px;
+    color: #000;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#page3>h4::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 24px;
+    height: 7px;
+    background-color: #F97057;
+    transform: skewY(-16deg);
+    margin: 0px -12px;
+}
+
+#page3 h1 {
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 80px;
+}
+
+#icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#icon-row {
+    display: flex;
+}
+
+#icon-row img {
+    width: 150px;
+}
+
+#page4 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #E7EEED;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 200px;
+}
+
+#page4>h4 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 10px;
+    color: #000;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#page4>h4::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 24px;
+    height: 7px;
+    background-color: #F97057;
+    transform: skewY(-16deg);
+    margin: 0px -12px;
+}
+
+#page4>#awards {
+    display: flex;
+    flex-direction: column;
+    margin-left: 220px;
+    gap: 30px;
+    margin-top: 250px;
+    z-index: 10;
+}
+
+#awards>#award-row {
+    display: flex;
+}
+
+#award-row>h2 {
+    width: 500px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#page4>h6 {
+    color: #F97057;
+    font-size: 12px;
+}
+
+#page4>h1 {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    font-size: 30vw;
+    color: #f96f57d7;
+    z-index: 0;
+}
+
+#page5 {
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+    background-color: #E7EEED;
+}
+
+#page5>#hand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10%;
+    top: 1%;
+    filter: drop-shadow(0px 0px 10px #00000080);
+}
+
+#page5>#back-logo {
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    transform: translateX(-50%,-50%);
+    width: 40%;
+    filter: drop-shadow(0px 0px 10px #77777780);
+}
