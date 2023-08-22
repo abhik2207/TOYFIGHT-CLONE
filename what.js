@@ -239,7 +239,7 @@ function awardCount(){
             n = 52
             document.querySelector("#page4>h1").innerHTML = n + "*"
         }
-    }, 100);
+    }, 50);
 }
 
 tl_4.to("#page4>h1",{
